@@ -40,12 +40,17 @@ button {
 	font-size: 20px;
 }
 
+html {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Libre Franklin';
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 }
 
 header {
@@ -107,4 +112,52 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (min-width: 1081px) {
+	header {
+		height: 15%;
+		align-items: flex-end;
+	}
+
+	main {
+		line-height: 1.5;
+	}
+
+	main h1 {
+		font-size: 4vw;
+		font-weight: 300;
+		margin: 1% 0;
+		margin-top: 2%;
+	}
+
+	main h1 .highlight {
+		font-size: inherit;
+		font-weight: 600;
+	}
+
+	main h2 {
+		font-weight: 300;
+	}
+
+	main form {
+		margin: 2%;
+	}
+
+	main form input {
+		height: 100%;
+	}
+
+	figure {
+		background-color: lime;
+		flex: 1;
+	}
+
+	figure img {
+		width: 30%;
+	}
+
+	footer {
+		margin-top: 5%;
+	}
 }
