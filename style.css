@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* Resettings */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1rem;
+}
+
+img, picture {
+	max-width: 100%;
+	display: block;
+	line-height: 0;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+button {
+	all: unset;
+	cursor: pointer;
+}
+
+/* Colors */
+:root {
+	/* Primary */
+	--blue: hsl(223, 87%, 63%);
+	/* Secondary */
+	--pale-blue: hsl(223, 100%, 88%);
+	--light-red: hsl(354, 100%, 66%);
+	/* Neutral */
+	--gray: hsl(0, 0%, 59%);
+	--very-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* General settings */
+* {
+	font-size: 20px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Libre Franklin';
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main h1 {
+	color: var(--gray);
+}
+
+.highlight {
+	color: var(--very-dark-blue);
+}
+
+main h2 {
+	color: var(--very-dark-blue);
+}
+
+main form {
+	display: flex;
+	justify-content: space-between;
+}
+
+main form input[type=email] {
+	border: 1px solid lightgray;
+	border-radius: 30px;
+	color: var(--very-dark-blue);
+	transition: 0.2s;
+}
+
+main form input[type=submit] {
+	border: none;
+	border-radius: 30px;
+	background-color: var(--blue);
+	color: white;
+	transition: 0.2s;
+}
+
+main form input[type=submit]:hover {
+	background-color: var(--pale-blue);
+}
+
+figure {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
