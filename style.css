@@ -42,14 +42,14 @@ button {
 
 html {
 	width: 100%;
-	height: 100%;
+	min-height: 100vh;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Libre Franklin';
-	width: 100vw;
+	width: 100%;
 	height: 100%;
 }
 
@@ -114,50 +114,60 @@ footer {
 	align-items: center;
 }
 
+/* Medium and large viewports */
 @media screen and (min-width: 1081px) {
-	header {
-		height: 15%;
-		align-items: flex-end;
+	body {
+		justify-content: space-between;
+	}
+
+	header, footer {
+		height: 20vh;
+		display: flex;
+		flex-direction: column;
 	}
 
 	main {
+		height: 30vh;
+		justify-content: flex-start;
 		line-height: 1.5;
 	}
 
 	main h1 {
-		font-size: 4vw;
+		font-size: 2em;
 		font-weight: 300;
-		margin: 1% 0;
-		margin-top: 2%;
 	}
 
 	main h1 .highlight {
 		font-size: inherit;
-		font-weight: 600;
+		font-weight: 700;
 	}
 
 	main h2 {
 		font-weight: 300;
+		margin-bottom: 2%;
 	}
 
 	main form {
-		margin: 2%;
+		height: 20%;
+		font-size: 1.2vw;
+		justify-content: center;
 	}
 
-	main form input {
-		height: 100%;
+	main form input[type=email] {
+		padding: 0 5%;
+	}
+
+	main form input[type=submit] {
+		padding: 0 15%;
+		font-weight: 600;
+		margin-left: 5%;
 	}
 
 	figure {
-		background-color: lime;
-		flex: 1;
+		margin: 5% 0;
 	}
-
+	
 	figure img {
-		width: 30%;
-	}
-
-	footer {
-		margin-top: 5%;
+		width: 40%;
 	}
 }
