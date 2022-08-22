@@ -96,6 +96,7 @@ main form input[type=submit] {
 	border-radius: 30px;
 	background-color: var(--blue);
 	color: white;
+	box-shadow: 0 10px 20px -10px lightgray;
 	transition: 0.2s;
 }
 
@@ -132,15 +133,22 @@ footer article a {
 
 footer article a {
 	color: var(--blue);
+	text-decoration: none;
+	transition: 0.2s;
 }
 
 footer article a i {
 	border-radius: 50%;
 }
 
-footer article a i:hover {
+footer article a:hover {
 	background-color: var(--blue);
 	color: white;
+	border-color: var(--blue);
+}
+
+small {
+	color: var(--gray);
 }
 
 /* Medium and large viewports */
@@ -199,4 +207,18 @@ footer article a i:hover {
 	figure img {
 		width: 40%;
 	}
-	
+
+	footer article a {
+		padding: 0.5%;
+		margin: 0 0.5%;
+	}
+
+	footer article i {
+		font-size: 2vw;
+	}
+
+	footer small {
+		font-size: 1vw;
+		margin-top: 1%;
+	}
+}	
