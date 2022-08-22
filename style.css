@@ -222,3 +222,73 @@ small {
 		margin-top: 1%;
 	}
 }	
+
+/* Mobile viewport settings. */
+@media screen and (max-width: 1080px) {
+	body {
+		padding: 10% 10%;
+		text-align: center;
+	}
+
+	header, footer {
+		height: 20vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	header img {
+		width: 30%;
+	}
+
+	main {
+		line-height: 1.5;
+	}
+
+	main h1 {
+		font-size: 4vh;
+		font-weight: 300;
+	}
+
+	main h1 .highlight {
+		font-size: inherit;
+		font-weight: 700;
+	}
+
+	main h2 {
+		font-size: 3vh;
+		font-weight: 300;
+	}
+
+	main form {
+		flex-direction: column;
+		width: 100%;
+		font-size: 3vh;
+		margin: 10% 0;
+	}
+
+	main form input {
+		padding: 3% 0;
+	}
+
+	main form input[type=email] {
+		padding: 3% 10%;
+	}
+
+	main form input[type=submit] {
+		margin-top: 5%;
+	}
+
+	figure {
+		margin: 15% 0;
+	}
+
+	footer article a {
+		padding: 2%;
+		margin-left: 5%;
+	}
+
+	footer small {
+		font-size: 2vh;
+		margin-top: 5%;
+	}
+}
