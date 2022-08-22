@@ -97,6 +97,7 @@ main form input[type=submit] {
 	background-color: var(--blue);
 	color: white;
 	box-shadow: 0 10px 20px -10px lightgray;
+	font-weight: 600;
 	transition: 0.2s;
 }
 
@@ -196,7 +197,6 @@ small {
 
 	main form input[type=submit] {
 		padding: 0 15%;
-		font-weight: 600;
 		margin-left: 5%;
 	}
 
