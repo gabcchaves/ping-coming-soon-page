@@ -88,6 +88,7 @@ main form input[type=email] {
 	border-radius: 30px;
 	color: var(--very-dark-blue);
 	transition: 0.2s;
+	outline: none;
 }
 
 main form input[type=submit] {
@@ -100,6 +101,7 @@ main form input[type=submit] {
 
 main form input[type=submit]:hover {
 	background-color: var(--pale-blue);
+	cursor: pointer;
 }
 
 figure {
@@ -112,6 +114,33 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+footer article {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+footer article a {
+	border: 1px solid lightgray;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer article a {
+	color: var(--blue);
+}
+
+footer article a i {
+	border-radius: 50%;
+}
+
+footer article a i:hover {
+	background-color: var(--blue);
+	color: white;
 }
 
 /* Medium and large viewports */
@@ -170,4 +199,4 @@ footer {
 	figure img {
 		width: 40%;
 	}
-}
+	
